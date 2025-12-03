@@ -1,5 +1,5 @@
 # Quarto output
-*.html
+/template.html
 *_files/
 .quarto/
 
