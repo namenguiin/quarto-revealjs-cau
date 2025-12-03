@@ -1,0 +1,223 @@
+---
+title: "CAU Reveal.js Theme"
+subtitle: "A Quarto presentation template for Chung-Ang University"
+author:
+  - name: First Author
+    affiliations:
+      - ref: cau-physics
+  - name: Second Author
+    affiliations:
+      - ref: cau-physics
+      - ref: kias
+  - name: Third Author
+    affiliations:
+      - ref: kias
+affiliations:
+  - id: cau-physics
+    name: Department of Physics, Chung-Ang University
+  - id: kias
+    name: Korea Institute for Advanced Study
+advisor: "Prof. Advisor Name"
+date: today
+format:
+  cau-revealjs:
+    toc: true
+    toc-depth: 1
+    toc-title: "Contents"
+    fig-align: center
+    center: true
+---
+
+# Introduction
+
+## About This Template
+
+This template is based on the [quarto-revealjs-ubd](https://github.com/haziqj/quarto-revealjs-ubd) theme by Haziq Jamil, modified for Chung-Ang University branding.
+
+::: {.callout-note}
+## Credits
+- Original theme: [haziqj/quarto-revealjs-ubd](https://github.com/haziqj/quarto-revealjs-ubd)
+- Modified by: Hyungkeun Nam
+:::
+
+## Features
+
+- CAU branding (logo, background images)
+- Slide numbering (hidden on title slide)
+- **Multiple authors with affiliation footnotes**
+- Table of contents support
+- MathJax for equations
+- 16:9 aspect ratio
+
+## Author/Affiliation Format
+
+```yaml
+author:
+  - name: First Author
+    affiliations:
+      - ref: affil-1
+  - name: Second Author
+    affiliations:
+      - ref: affil-1
+      - ref: affil-2
+affiliations:
+  - id: affil-1
+    name: First Institution
+  - id: affil-2
+    name: Second Institution
+```
+
+Result: First Author¹, Second Author¹ˑ², with footnotes below.
+
+# Content Examples
+
+## Lists
+
+### Unordered List
+
+- First item
+- Second item
+  - Nested item
+  - Another nested item
+- Third item
+
+### Ordered List
+
+1. First step
+2. Second step
+3. Third step
+
+## Incremental Lists
+
+::: {.incremental}
+- Item appears first
+- Then this one
+- And finally this
+:::
+
+## Two Columns
+
+::::: columns
+::: {.column width="50%"}
+### Left Column
+
+- Point A
+- Point B
+- Point C
+:::
+
+::: {.column width="50%"}
+### Right Column
+
+![Placeholder for image](https://via.placeholder.com/400x300){width="100%"}
+:::
+:::::
+
+## Equations
+
+Inline math: $E = mc^2$
+
+Display math:
+
+$$
+\frac{\partial f}{\partial t} + \mathbf{v} \cdot \nabla f = \left( \frac{\partial f}{\partial t} \right)_{\text{coll}}
+$$
+
+## Code Blocks
+
+```python
+import numpy as np
+
+def hello_world():
+    """A simple function."""
+    print("Hello, CAU!")
+    return np.pi
+
+result = hello_world()
+```
+
+## Callouts
+
+::: {.callout-tip}
+## Tip
+This is a helpful tip for your audience.
+:::
+
+::: {.callout-warning}
+## Warning
+Be careful about this point.
+:::
+
+::: {.callout-important}
+## Important
+This is crucial information.
+:::
+
+# Advanced Features
+
+## Pauses
+
+Use `. . .` for pauses:
+
+First point appears immediately.
+
+. . .
+
+Second point appears after a pause.
+
+. . .
+
+Third point appears last.
+
+## Fragments
+
+::: {.fragment .fade-in}
+This fades in.
+:::
+
+::: {.fragment .highlight-red}
+This gets highlighted in red.
+:::
+
+::: {.fragment .fade-out}
+This fades out.
+:::
+
+## Speaker Notes
+
+::: notes
+These are speaker notes that only you can see during the presentation.
+
+- Remember to explain this point
+- Mention the key takeaway
+:::
+
+Press `S` to open speaker view.
+
+## Keyboard Shortcuts
+
+| Key | Action |
+|-----|--------|
+| `F` | Fullscreen |
+| `S` | Speaker view |
+| `O` | Overview mode |
+| `?` | Help |
+| `Esc` | Exit fullscreen/overview |
+
+# Conclusion
+
+## Summary
+
+::: {.incremental}
+1. This template provides CAU branding
+2. It supports all standard Quarto/Reveal.js features
+3. Easy to customize for your needs
+:::
+
+## Thank You! {.center}
+
+::: {style="font-size: 1.5em; margin-top: 20%;"}
+**Questions?**
+
+Your Name | your.email@cau.ac.kr
+:::
